@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Reseting */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* ----------------------------------- */
+
+.wrapper{
+
+}
+
+
+.video{
+    position: relative;
+    width: 100%;
+    height: auto;
+
+}
+
+
+/* Nav */
+.nav{
+    position: absolute;
+    top: 0;
+    display: flex;
+
+    padding:1rem;
+    display:flex;
+    margin:0 auto;
+    left: 50%;
+    transform: translate(-50%, 10%); 
+}
+.nav-list{
+
+width:100%;
+
+    padding:1rem;
+}
+
+.nav .nav-list a{
+    width: 100%;
+}
+
+.nav .nav-list a img:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+
+/* Dowload */
+
+.download{
+    position:absolute;
+    display: flex;
+    bottom: 17%;
+    left: 50%;
+    transform: translate(-50%, 10%);    
+    width:65%;
+}
+
+
+.download div img {
+    width: 100%;
+    padding: 0 10px;
+}
+
+
+.download div img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+
+}
+
+
+
+
+
+
+
+/* ---------------- */
+
+/* TrangChu-NapThe */
+
+
+.trang-chu{
+    position:absolute;
+    width: 13%;
+    top: 51%;
+    left: 7%;
+}
+
+.nap-the {
+    position:absolute;
+    width: 13%;
+    top: 51%;
+    right: 7%; 
+}
+
+
+
+.trang-chu a img{
+    width:100%;
+}   
+
+.trang-chu a img:hover{
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
+
+.nap-the a img{
+    width:100%;
+} 
+
+.nap-the a img:hover{
+    transform: scale(1.1);
+    transition: all 0.6s;
+
+}
+
+
+
+/* mobile */
+
+.main-container{
+    display:none;
+}
+
+.btn-menu-mobile{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* fooer */
+
+.footer{
+    position: absolute;
+    left: 50%;
+    bottom: -10vw;
+    justify-content:center;
+    text-align: center;
+    transform: translate(-50%);
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.footer-btn{
+    font-size: 1.4vw;
+    font-weight: 500;
+    
+}
+
+.footer-btn a{
+    text-decoration: none;
+    color: #000;
+    padding:0 15px;
+    
+}
+
+.footer-btn a.btn-caidat {
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.footer p{
+   marrgin: 10px 0;
+   color:rgb(83, 82, 82);
+   font-size: 1.1vw;
+   line-height:1.5;
+    
+}
+
+
+
+/* nav mobile */
+
+#nav-mobile-input:checked ~.wrapper-menu-mobile{
+    transform:translateY(0%);
+}
+
+.nav-input{
+    display: none;
+}
+
+.nav-close{
+    display: none;
+}
+
+.footer-moblie{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile */
+
+@media  only screen and (max-width:767px){
+
+    .video{
+        display: none;
+    }
+    .wrapper-mobile{
+        position: relative;
+        background-image: url(./img/photo_2022-12-05_13-57-38\ \(2\).jpg);
+        height:100vh;
+        width:100wh;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .btn-menu-mobile{
+        display:block;
+        position: absolute;
+        top: 0;right: 0;
+    }
+
+    .btn-menu-mobile img{
+        width:75px;
+        padding:10px;
+
+    }
+
+    .main-container {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 55%;
+        display: flex;
+        text-align: center;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .trangchu{
+        width: 30%;
+    }
+
+    .trangchu img {
+        width: 70%;
+    }
+   
+    .napthe{
+        width: 30%;
+
+    }
+    .napthe img {
+        width: 70%;
+    }
+
+    .download-mobile{
+        width: 30%;
+    }
+
+    .download-mobile img {
+        width: 75%;
+    }
+
+    .footer-moblie{  
+        position: absolute;
+        display:block;
+        bottom: -6vw;
+        left: 50%;
+        width:100%;
+        justify-content:center;
+        text-align: center;
+        transform: translate(-50%);
+        padding-bottom: 20px;
+    }
+
+    
+    .footer-btn{
+    font-size: 2.3vw;
+    
+    
+    }
+
+
+    .footer-moblie p{
+        font-size: 1.8vw;
+        line-height:1.5;
+         
+     }
+
+
+/* Wrapper menu-mobile */
+    .wrapper-menu-mobile{
+        background-image: url(./img/photo_2022-12-08_09-32-21.jpg);
+        position:fixed;
+        left:0;right:0;top:0;bottom:0;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;  
+        transform: translateY(100%);
+        z-index: 1;
+
+    }
+
+    .nav-close{
+        position:absolute;
+        right:0;
+        top:0;
+        padding:15px;
+        display: block;
+    }
+
+    .nav-close img{
+        width: 60px;
+        filter: contrast(0);
+        display:block;
+    }
+
+
+    .nav-link{
+        position:absolute;
+        right: 27%;
+        top: 29%;
+    
+    }
+
+
+    .nav-link li {
+        list-style: none;
+        width: 300px;
+        height:100px;
+        border: 1px solid red;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/* @media  only screen and (max-width: 700px) and (min-width: 500px) {
+
+    .wrapper-mobile{
+        height:150vh;
+        position: relative;
+    }
+
+    .main-container{
+        position:absolute;
+        width: 100%;
+        top: 70%;left: 0;
+        padding-top:0;
+    }
+
+    .trangchu{
+        width: 35%;
+    }
+
+    .napthe{
+        width: 35%;
+    }
+    .main-container img{
+        width: 100%;
+    }
+
+    .download-mobile{
+        width: 30%;
+    }
+
+    .download-mobile img{
+        width: 100%;
+
+
+    }
+
+
+} */
+
+
+
+
+
+

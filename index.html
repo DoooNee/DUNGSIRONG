@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUNG SI RONG</title>
+    <link rel="stylesheet" href="./index.css"></link>
+    <link href="./img/favicon.jpg" rel="shortcut icon" type="image/png">
+
+
+    <script type="text/javascript">
+        var jsVer = 15;
+        var phoneWidth = parseInt(window.screen.width);
+        console.log(phoneWidth);
+        var phoneScale = phoneWidth/640;
+
+        if(phoneWidth < 768){
+            var ua = navigator.userAgent;
+            if (/Android (\d+\.\d+)/.test(ua)){
+                var version = parseFloat(RegExp.$1);
+                // andriod 2.3
+                if(version>2.3){
+                    document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+                }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+                }
+
+            } else {
+                console.log( phoneWidth );
+                document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+            }   
+
+        }else{
+            document.write('<meta name="viewport" content="width=768, minimum-scale =1, maximum-scale = 1, target-densitydpi=device-dpi">');
+        }
+    
+    </script>
+</head>
+<body>
+    <header class="wrapper">
+
+        <!-- ----------------------- desktop -------------------->
+        <div class="video">
+            <video width="100%" autoplay muted loop>
+                <source src="./img/clip-home.mp4" type="video/mp4">
+            </video>
+            <!-- nav  -->
+
+            <div class="nav">
+                <div class="nav-list"><a href="#" ><img src="./img/btn-fp-off.png"></a></div>
+                <div class="nav-list"><a href="#" ><img src="./img/btn-chat-off.png"></a></div>
+                <div class="nav-list"><a href="#" ><img src="./img/btn-hd-off.png"></a></div>
+                <div class="nav-list"><a href="#" ><img src="./img/btn-youtube-off.png"></a></div>
+                <div class="nav-list"><a href="#" ><img src="./img/btn-tiktok-off.png"></a></div>
+            </div>
+
+          
+             <!-- TrangChu NapThe -->
+
+             <div class="trang-chu"><a href="#" ><img src="./img/btn-home-off.png"></a></div>
+             <div class="nap-the"><a href="#" ><img src="./img/btn-nt-off.png"></a></div>
+            <!-- Dowlaod -->
+
+            <div class="download">
+                <div><a href="#" ><img src="./img/btn-pc-off.png"></a></div>
+                <div><a href="#" ><img src="./img/btn-apk-off.png"></a></div>
+                <div><a href="#" ><img src="./img/btn-android-off.png"></a></div>
+                <div><a href="#" ><img src="./img/btn-ios-off.png"></div> 
+            </div>
+
+                   <!-- footer -->
+
+    <footer class="footer">
+        <div class="footer-btn">
+            <a class="btn-hotro" href="#">HỖ TRỢ</a>
+            <a class="btn-caidat" href="#">CÀI ĐẶT</a>
+            <a class="btn-dieukh" href="#">ĐIỀU KHOẢNG</a>
+        </div>
+        <p>CHƠI QUÁ 180 PHÚT MỘT NGÀY SẼ ẢNH HƯỞNG XẤU ĐẾN SỨC KHỎE</p>
+        <p>CÔNG TY CỔ PHẦN ACEGAME</p>
+        <p>Người chịu trách nhiệm nội dung: Lê Văn Hiếu</p>
+        <p>Địa chỉ: Tầng 14, Tòa Nhà HM TOWN, 412 Nguyễn Thị Minh Khai, Phường 05, Quận 03, TP HỒ CHÍ MINH</p>     
+        <p>Hotline: 1900068658</p>     
+        <p>Email hổ trợ: info@acegame.vn</p>     
+        <p>Thời gian: 8:00 - 22:00 các ngày (GMT+7)</p>     
+        <p>Giấy phép nội dung số: 1358/QĐ-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 07/07/2022</p>     
+    </footer>
+    
+              
+        </div>
+        
+
+        <!-- ----------------------- mobile ----------------------- -->
+        <div class="wrapper-mobile">
+            <!-- Menu mobile  max-width:767px-->
+
+
+            <label for="nav-mobile-input" class="btn-menu-mobile">
+                <img src="./img/btn-menu.png" />       
+            </label> 
+            <input type="checkbox" id="nav-mobile-input" class="nav-input" />
+
+            <div class="wrapper-menu-mobile">
+                <label for="nav-mobile-input" class ="nav-close" >
+                    <img src="./img/close1.png">
+                </label>
+            </div>
+
+
+            <!-- dowlaod mobile -->
+            <div class="main-container">
+                <div class="trangchu"><img src="./img/btn-home-off.png" ></div>
+                <div class="download-mobile">
+                    <img class="download-mobile-android"  src="./img/btn-android-off.png" >
+                    <img class="download-mobile-ios" src="./img/btn-ios-off.png" >
+                    <img class="download-mobile-apk" src="./img/btn-apk-off.png">
+                    <img class="download-mobile-pc" src="./img/btn-pc-off.png">
+                </div>
+                <div class="napthe"><img src="./img/btn-nt-off.png" ></div>
+            </div>
+
+                                <!-- footer -->
+
+                <footer class="footer-moblie">
+                        <div class="footer-btn">
+                            <a class="btn-hotro" href="#">HỖ TRỢ</a>
+                            <a class="btn-caidat" href="#">CÀI ĐẶT</a>
+                            <a class="btn-dieukh" href="#">ĐIỀU KHOẢNG</a>
+                        </div>
+                        <p>CHƠI QUÁ 180 PHÚT MỘT NGÀY SẼ ẢNH HƯỞNG XẤU ĐẾN SỨC KHỎE</p>
+                        <p>CÔNG TY CỔ PHẦN ACEGAME</p>
+                        <p>Người chịu trách nhiệm nội dung: Lê Văn Hiếu</p>
+                        <p>Địa chỉ: Tầng 14, Tòa Nhà HM TOWN, 412 Nguyễn Thị Minh Khai, Phường 05, Quận 03, TP HỒ CHÍ MINH</p>     
+                        <p>Hotline: 1900068658</p>     
+                        <p>Email hổ trợ: info@acegame.vn</p>     
+                        <p>Thời gian: 8:00 - 22:00 các ngày (GMT+7)</p>     
+                        <p>Giấy phép nội dung số: 1358/QĐ-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 07/07/2022</p>     
+                </footer>
+        </div>
+          
+
+    </header>
+
+       
+                
+  
+
+<!-- Nhận diện thiết bị dowlaod-mobile -->
+    <script type="text/javascript">
+        
+        var userAgent = navigator.userAgent.toLowerCase();
+             if(userAgent.search("iphone") > -1){
+                 console.log('ip');
+                 document.querySelector(".download-mobile-pc").style.display = 'none';
+                 document.querySelector(".download-mobile-android").style.display = 'none';
+                 document.querySelector(".download-mobile-apk").style.display = 'none';
+ 
+             }else if(userAgent.search("android") > -1){
+                 document.querySelector(".download-mobile-ios").style.display = 'none';
+                 document.querySelector(".download-mobile-pc").style.display = 'none';
+             }else{
+                document.querySelector(".download-mobile-pc").style.display = 'none';
+
+             }
+            
+     </script>
+     
+</body>
+</html>
